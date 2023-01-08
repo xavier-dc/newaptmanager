@@ -1,0 +1,54 @@
+.cardContainer {
+    display:flex;
+    flex-direction: column;
+    margin: 3px;
+    width: 20%;
+}
+
+.card {
+    /* margin: 2rem 2rem 2rem 0; */
+    display: flex;
+    width: 100%;
+    box-shadow: 0 8px 10px 3px rgba(92, 92, 92, 0.349);
+    transition: transform .3s ease;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.card > div {
+    margin: 5%;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+}
+
+.card:hover {
+    transform: scale(1.1)
+}
+
+#removeTenant{
+    position:relative;
+    width: 50%;
+    margin-left: 50%;
+    margin-bottom: 10%;
+    padding: 0;
+    transform: translateY(100%)
+}
+
+.card__title {
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.card__image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.card__image img {
+    border-radius: 50%;
+}

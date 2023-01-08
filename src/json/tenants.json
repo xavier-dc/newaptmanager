@@ -1,0 +1,122 @@
+{
+    "tenants": [
+        {
+            "name" : "James Beans",
+            "unit" : "10B",
+            "email" : "jbeans@beans.org",
+            "phone" : {
+                "home": "(631)555-5555",
+                "mobile": "(555)555-5555"
+            },
+            "package": "P"
+        },
+        {
+            "name": "Bob The Drag Queen",
+            "unit": "13F",
+            "email": "",
+            "phone" : {
+                "home": "(390)275-3262",
+                "mobile": "(901)854-2894"
+            },
+            "package": ""
+        },
+        {
+            "name": "Peter Parker",
+            "unit": "9C",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Willem Dafoe",
+            "unit": "9C",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Harold Jameson",
+            "unit": "4D",
+            "email": "haroldbarold@example.com",
+            "package": ""
+        },
+        {
+            "name": "Milly Bobby Brown",
+            "unit": "4D",
+            "email": "strangerthings@strange.com",
+            "phone" : {
+                "home": "(213)341-4028",
+                "mobile": "(280)108-1845"
+            },
+            "package": ""
+        },
+        {
+            "name": "Benjamin Franklin",
+            "unit": "8A",
+            "email": "benjaminfranklin@gmail.com",
+            "phone" : {
+                "home": "(999)810-2840",
+                "mobile": "(284)108-2477"
+            },
+            "package": ""
+        },
+        {
+            "name": "John Doe",
+            "unit": "3A",
+            "email": "johndoe@yahoo.com",
+            "package": ""
+        },
+        {
+            "name": "Jane Doe",
+            "unit": "3A",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Billy Idol",
+            "unit": "12E",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Sarah Michelle Gellar",
+            "unit": "PH",
+            "email": "buffythevampire@slayer.com",
+            "package": ""
+        },
+        {
+            "name": "Michael Jackson",
+            "unit": "2B",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Tarzan",
+            "unit": "7O",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "James Marsters",
+            "unit": "PH",
+            "email": "",
+            "pakcage": ""
+        },
+        {
+            "name": "Britney Spears",
+            "unit": "24F",
+            "email": "bspears@oops.com",
+            "package": ""
+        },
+        {
+            "name": "Kurt Cobain",
+            "unit": "4E",
+            "email": "kcobain@nirvana.com",
+            "package": ""
+        },
+        {
+            "name": "Jeff Probst",
+            "unit": "9H",
+            "email": "jeffprobst@survivor.com",
+            "package": ""
+        }
+    ]
+}

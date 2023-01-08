@@ -11,3 +11,14 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.address {
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.address>p {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: red;
+}
