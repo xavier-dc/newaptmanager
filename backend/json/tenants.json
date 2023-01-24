@@ -1,18 +1,18 @@
 {
     "tenants": [
         {
-            "name": "James Beans",
+            "name": "Michael Smith",
             "unit": "10B",
-            "email": "jbeans@beans.org",
+            "email": "msmith@smith.org",
             "phone": "(631)555-5555",
             "package": "P"
         },
         {
-            "name": "Bob The Drag Queen",
+            "name": "Jennifer Williams",
             "unit": "13F",
             "email": "",
             "phone": "(901)854-2894",
-            "package": "P"
+            "package": "RP"
         },
         {
             "name": "Peter Parker",
@@ -24,12 +24,12 @@
             "name": "Willem Dafoe",
             "unit": "9C",
             "email": "",
-            "package": "P"
+            "package": ""
         },
         {
-            "name": "Harold Jameson",
+            "name": "Amanda Brown",
             "unit": "4D",
-            "email": "haroldbarold@example.com",
+            "email": "abrown@example.com",
             "package": ""
         },
         {
@@ -37,62 +37,62 @@
             "unit": "4D",
             "email": "strangerthings@strange.com",
             "phone": "(213)341-4028",
-            "package": "P"
+            "package": "L"
         },
         {
-            "name": "Benjamin Franklin",
+            "name": "Ryan Davis",
             "unit": "8A",
-            "email": "benjaminfranklin@gmail.com",
+            "email": "rdavis@gmail.com",
             "phone": "(999)810-2840",
             "package": "P"
         },
         {
-            "name": "John Doe",
+            "name": "Natalie Martinez",
             "unit": "3A",
-            "email": "johndoe@yahoo.com",
-            "package": ""
+            "email": "nmartinez@martin.com",
+            "package": "P"
         },
         {
-            "name": "Jane Doe",
+            "name": "David Anderson",
             "unit": "3A",
-            "email": "",
-            "package": ""
+            "email": "danderson@and.org",
+            "package": "P"
         },
         {
-            "name": "Billy Idol",
+            "name": "Samantha Hernandez",
             "unit": "12E",
             "email": "",
-            "package": "P"
-        },
-        {
-            "name": "Sarah Michelle Gellar",
-            "unit": "PH",
-            "email": "buffythevampire@slayer.com",
             "package": ""
         },
         {
-            "name": "Michael Jackson",
+            "name": "Anthony Moore",
+            "unit": "PH",
+            "email": "amoore@moore.com",
+            "package": ""
+        },
+        {
+            "name": "Brittany Martin",
             "unit": "2B",
             "email": "",
-            "package": ""
+            "package": "P"
         },
         {
-            "name": "Tarzan",
+            "name": "Mark Thompson",
             "unit": "7O",
             "email": "",
-            "package": "P"
+            "package": "RL"
         },
         {
             "name": "James Marsters",
             "unit": "PH",
             "email": "",
-            "package": ""
+            "package": "P"
         },
         {
-            "name": "Britney Spears",
+            "name": "Lauren Garcia",
             "unit": "24F",
-            "email": "bspears@oops.com",
-            "package": ""
+            "email": "lgarcia@garcia.com",
+            "package": "LLL"
         },
         {
             "name": "Kurt Cobain",
@@ -101,10 +101,28 @@
             "package": ""
         },
         {
-            "name": "Jeff Probst",
+            "name": "Joshua Martinez",
             "unit": "9H",
-            "email": "jeffprobst@survivor.com",
+            "email": "jmartinez@martinez.com",
             "package": "P"
+        },
+        {
+            "name": "Amanda Rodriguez",
+            "unit": "7O",
+            "package": "L",
+            "email": ""
+        },
+        {
+            "name": "Andrew Wilson",
+            "unit": "17A",
+            "package": "P",
+            "email": ""
+        },
+        {
+            "name": "Stephanie Perez",
+            "unit": "17A",
+            "package": "P",
+            "email": ""
         }
     ]
 }
