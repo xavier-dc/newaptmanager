@@ -1,1 +1,110 @@
-{"tenants":[{"name":"James Beans","unit":"10B","email":"jbeans@beans.org","phone":"(631)555-5555","package":"P"},{"name":"Bob The Drag Queen","unit":"13F","email":"","phone":"(901)854-2894","package":"P"},{"name":"Peter Parker","unit":"9C","email":"","package":"P"},{"name":"Willem Dafoe","unit":"9C","email":"","package":"P"},{"name":"Harold Jameson","unit":"4D","email":"haroldbarold@example.com","package":""},{"name":"Milly Bobby Brown","unit":"4D","email":"strangerthings@strange.com","phone":"(213)341-4028","package":"P"},{"name":"Benjamin Franklin","unit":"8A","email":"benjaminfranklin@gmail.com","phone":"(999)810-2840","package":"P"},{"name":"John Doe","unit":"3A","email":"johndoe@yahoo.com","package":""},{"name":"Jane Doe","unit":"3A","email":"","package":""},{"name":"Billy Idol","unit":"12E","email":"","package":"P"},{"name":"Sarah Michelle Gellar","unit":"PH","email":"buffythevampire@slayer.com","package":""},{"name":"Michael Jackson","unit":"2B","email":"","package":""},{"name":"Tarzan","unit":"7O","email":"","package":"P"},{"name":"James Marsters","unit":"PH","email":"","pakcage":""},{"name":"Britney Spears","unit":"24F","email":"bspears@oops.com","package":""},{"name":"Kurt Cobain","unit":"4E","email":"kcobain@nirvana.com","package":""},{"name":"Jeff Probst","unit":"9H","email":"jeffprobst@survivor.com","package":"P"}]}
+{
+    "tenants": [
+        {
+            "name": "James Beans",
+            "unit": "10B",
+            "email": "jbeans@beans.org",
+            "phone": "(631)555-5555",
+            "package": "P"
+        },
+        {
+            "name": "Bob The Drag Queen",
+            "unit": "13F",
+            "email": "",
+            "phone": "(901)854-2894",
+            "package": "P"
+        },
+        {
+            "name": "Peter Parker",
+            "unit": "9C",
+            "email": "",
+            "package": "P"
+        },
+        {
+            "name": "Willem Dafoe",
+            "unit": "9C",
+            "email": "",
+            "package": "P"
+        },
+        {
+            "name": "Harold Jameson",
+            "unit": "4D",
+            "email": "haroldbarold@example.com",
+            "package": ""
+        },
+        {
+            "name": "Milly Bobby Brown",
+            "unit": "4D",
+            "email": "strangerthings@strange.com",
+            "phone": "(213)341-4028",
+            "package": "P"
+        },
+        {
+            "name": "Benjamin Franklin",
+            "unit": "8A",
+            "email": "benjaminfranklin@gmail.com",
+            "phone": "(999)810-2840",
+            "package": "P"
+        },
+        {
+            "name": "John Doe",
+            "unit": "3A",
+            "email": "johndoe@yahoo.com",
+            "package": ""
+        },
+        {
+            "name": "Jane Doe",
+            "unit": "3A",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Billy Idol",
+            "unit": "12E",
+            "email": "",
+            "package": "P"
+        },
+        {
+            "name": "Sarah Michelle Gellar",
+            "unit": "PH",
+            "email": "buffythevampire@slayer.com",
+            "package": ""
+        },
+        {
+            "name": "Michael Jackson",
+            "unit": "2B",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Tarzan",
+            "unit": "7O",
+            "email": "",
+            "package": "P"
+        },
+        {
+            "name": "James Marsters",
+            "unit": "PH",
+            "email": "",
+            "package": ""
+        },
+        {
+            "name": "Britney Spears",
+            "unit": "24F",
+            "email": "bspears@oops.com",
+            "package": ""
+        },
+        {
+            "name": "Kurt Cobain",
+            "unit": "4E",
+            "email": "kcobain@nirvana.com",
+            "package": ""
+        },
+        {
+            "name": "Jeff Probst",
+            "unit": "9H",
+            "email": "jeffprobst@survivor.com",
+            "package": "P"
+        }
+    ]
+}

@@ -22,7 +22,10 @@ export default class App extends Component {
   
   async componentDidMount() {
     const today = new Date();
+
+    //eslint-disable-next-line
     let date = today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate();
+    //eslint-disable-next-line
     let time = today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
 
     const callers = await this.syncCallers();
@@ -52,10 +55,11 @@ export default class App extends Component {
     return callers;
   }
 
-  changePackage(id) {
+  changePackage(id, data, store) {
+    console.log(`Am I adding or removing? ${store}`);
     this.state.myData.tenants.forEach(tenant => {
       if (tenant.name === id.name && tenant.package !== undefined) {
-        fetch(`http://localhost:5001/update/${tenant.name}`, {
+        fetch(`http://localhost:5001/update/${tenant.name}/${data}/${store}`, {
           'method': 'POST',
             'headers': {
                 'Content-Type': 'application/json',
@@ -65,6 +69,8 @@ export default class App extends Component {
         }).then(response => response.json())
         .then(data => {this.setState({myData: data}); this.setState({users: Array.from(data)}); this.setState({myUsers: Array.from(data)})})
         .catch(err => console.log(err));
+      } else {
+        console.log(`Could not find ${tenant.name} or package is undefined`);
       }
     })
   }
@@ -94,10 +100,10 @@ export default class App extends Component {
   // this.setState({ users: Array.from(this.state.myData.tenants)});
   // this.setState({ allUsers: this.state.users });
 
-  const MakeCallersUpdate = async(caller) => {
-    this.changePackage(caller);
+  const MakeCallersUpdate = async(caller, data, store) => {
+    this.changePackage(caller, data, store);
     var getCallers = await this.syncCallers();
-    getCallers ? setCallers(getCallers) : prompt("could not get callers, please refresh");
+    getCallers ? setCallers(getCallers) : window.alert("could not get callers, please refresh");
   }
 
   const filterCards = event => {
@@ -121,10 +127,12 @@ export default class App extends Component {
 
     return (
       <div className="App">
-        <input className="search-box" placeholder="Search..." onInput={filterCards}/>
+        <div className="main-tools center">
+          <input className="search-box" placeholder="Search..." onInput={filterCards}/>
 
-        <div className="tenantTool">
-          <TenantTool filter={filterTool} add={this.addTenant}/>
+          <div className="tenantTool">
+            <TenantTool filter={filterTool} add={this.addTenant}/>
+          </div>
         </div>
 
         <div className="cards-container">

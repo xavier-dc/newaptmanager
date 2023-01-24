@@ -51,19 +51,44 @@ app.post('/add', (req, res) => {
     res.send(req.body);
 })
 
-app.post('/update/:id', (req,res) => {
+app.post('/update/:id/:data/:store', (req,res) => {
+    //TODO: add ability to individually Add or Remove packages for multiple instances of packages
+
+    //TODO: Check for folder displaying current Date => Month & Day, add times according to day, include color coding for txt file?
+
+    const packageData = req.params.data;
     const id = req.params.id;
     const data = fs.readFileSync(path.join(__dirname, tenantDirectory));
     const tenants = JSON.parse(data);
+    const currentTime = Date.now();
+    let logText = fs.readFileSync(path.join(__dirname, 'log.txt'));
     
     tenants.tenants.forEach(tenant => {
         if (id === tenant.name) {
-            tenant.package === "P" ? tenant.package = "" : tenant.package = "P";
+            if (packageData.length > 0) {
+                if (req.params.store === 'remove') {
+                    console.log("handle remove package");
+                    if (tenant.package.includes(packageData)) {
+                        console.log(`trying to remove ${packageData} from ${tenant.name}`);
+                        tenant.package = tenant.package.replace(packageData, '');
+
+                        logText += `\n${tenant.name} picked up a ${packageData}. \nAt ${currentTime}\n`;
+                    }
+                 } else if (req.params.store === 'store') {
+                    tenant.package += packageData;
+                    logText += `\n${tenant.name} received ${packageData}. \nAt ${currentTime}\n`;
+                }
+            }
+
             fs.writeFile(path.join(__dirname, tenantDirectory), JSON.stringify(tenants), (err) => {
                 if (err) throw err;
                 console.log(`${tenant.name}'s package has been updated to ${tenant.package}`);
             })
-            console.log(tenants);
+
+            fs.writeFile(path.join(__dirname, 'log.txt'), logText, (err) => {
+                if (err) throw err;
+            })
+            // console.log(tenants);
             res.send(tenants);
         }
     })

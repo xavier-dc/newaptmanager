@@ -1,0 +1,17 @@
+.recievedPackage {
+    margin: 2px;
+    font-weight: 400;
+    color: red;
+    transition: all 0.3s ease-in-out;
+}
+
+.recievedPackage:hover, .recievedPackage:hover p {
+    transform: scale(1.5);
+    color: blue;
+    transition: all 0.3s ease-in-out;
+}
+
+.address {
+    display: flex;
+    flex-direction: row;
+}

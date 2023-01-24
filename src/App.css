@@ -37,3 +37,14 @@
 .white {
     background: linear-gradient(white, rgb(233, 232, 232))
 }
+
+.center {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-tools {
+    max-width: 90%;
+}
